@@ -1,0 +1,93 @@
+<web-app>
+    <display-name>
+        CNT 4714 Project 4
+    </display-name>
+    <description>
+        A three-tier distributed web-based application
+    </description>
+
+    <servlet>
+        <servlet-name>authentication</servlet-name>
+        <description>
+            A simple servlet that handles the user authentication
+        </description>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rootuser</servlet-name>
+        <description>
+            Servlet that handles root user database commands
+        </description>
+        <servlet-class>RootUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rootuser</servlet-name>
+        <url-pattern>/RootUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>clientuser</servlet-name>
+        <description>
+            Servlet that handles client user database commands
+        </description>
+        <servlet-class>ClientUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>clientuser</servlet-name>
+        <url-pattern>/ClientUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>suppliersinsert</servlet-name>
+        <description>
+            Servlet that handles suppliers insert commands
+        </description>
+        <servlet-class>SuppliersInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>suppliersinsert</servlet-name>
+        <url-pattern>/SuppliersInsert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>partsinsert</servlet-name>
+        <description>
+            Servlet that handles parts insert commands
+        </description>
+        <servlet-class>PartsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>partsinsert</servlet-name>
+        <url-pattern>/PartsInsert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jobsinsert</servlet-name>
+        <description>
+            Servlet that handles jobs insert commands
+        </description>
+        <servlet-class>JobsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jobsinsert</servlet-name>
+        <url-pattern>/JobsInsert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>shipmentsinsert</servlet-name>
+        <description>
+            Servlet that handles shipments insert commands
+        </description>
+        <servlet-class>ShipmentsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shipmentsinsert</servlet-name>
+        <url-pattern>/ShipmentsInsert</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

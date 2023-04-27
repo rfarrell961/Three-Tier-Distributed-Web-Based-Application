@@ -1,0 +1,76 @@
+<!DOCTYPE html">
+<!-- authentication.html -->
+<html lang="en">
+    <head>
+        <title>Project 4 Authentication</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {
+                background-color: linen;
+                align-content: center;
+                text-align: center;
+            }
+            
+            h1 {
+                text-align: center;
+                font-size: 24;
+                font-weight: bold;
+                margin-bottom: 4%;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 18;
+                margin-bottom: 4%;
+                color: maroon;
+            }
+
+            h3 {
+                color: blue;
+                text-align: center;
+                font-size: 18;
+            }
+
+            .header {
+                background-color: gray;
+                padding-top: 2%;
+                padding-bottom: 4%;
+                border-bottom: 2px solid black;;
+            }
+
+            .mainArea {
+                padding-top: 20%;
+                height: 100%;
+                background-color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                Welcome to the Spring 2023 Project 4 Enterprise System
+            </h1>
+            
+            <h2>
+                A Servlet/JSP-based Multi-tiered Enterprise Application Using A Tomcat Container
+            </h2>
+            <h3>
+                - User Authentication Page -
+            </h3>
+        </div>
+        <div class="mainArea">
+            <form action="/Project 4/Authentication" method="get">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="username"/><br><br>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="text" name="password"/><br><br>
+                </div>
+                <input type="submit" value="Login"/>
+            </form>
+        </div>
+    </body>
+</html>
